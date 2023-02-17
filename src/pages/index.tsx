@@ -73,7 +73,7 @@ export default function Home() {
           </div>
         </nav>
 
-        <section id="HOME" className="md:max-w-full md:h-screen mx-auto md:items-center bg-image-central bg-no-repeat bg-cover p-20">
+        <section id="HOME" className="md:max-w-full h-screen md:mx-auto md:items-center bg-image-central bg-no-repeat bg-cover p-20">
 
           <div className='flex flex-col text-center items-center mt-36 md:p-36 text-white drop-shadow-lg'>
             <strong className='md:text-7xl text-5xl font-serif border-b-2 pb-2 '>Sarah & Dave</strong>
@@ -104,7 +104,7 @@ export default function Home() {
             </p>
 
           </div>
-          <div className='md:flex mt-2  pb-4 items-start'>
+          <div className='md:flex mt-2 pb-4 items-start'>
             <p className="md:mr-5 p-2 text-justify md:text-xl font-semibold">
               <img
               src='https://img.freepik.com/fotos-gratis/homem-sorridente-de-tiro-completo-segurando-mulher_23-2149690982.jpg?w=740&t=st=1676406550~exp=1676407150~hmac=a6876c546becd13781483155fa16b395214f45d4f36d3e25993542083407bc15'
@@ -119,7 +119,7 @@ export default function Home() {
         </section>
 
 
-        <section id='INFORMACOES' className="md:max-w-full md:h-screen md:mx-auto items-center ">
+        <section id='INFORMACOES' className="md:max-w-full md:h-screen mx-auto items-center ">
           <div className='md:flex items-center mb-5'>
             <img
               src='https://img.freepik.com/fotos-gratis/homem-sorridente-de-tiro-completo-segurando-mulher_23-2149690982.jpg?w=740&t=st=1676406550~exp=1676407150~hmac=a6876c546becd13781483155fa16b395214f45d4f36d3e25993542083407bc15'
