@@ -24,7 +24,7 @@ export default function Home() {
 
       <div className='md:max-w-full md:h-screen'>
         {/**Nav Bar */}
-        <nav className="bg-white border-b-2 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 fixed w-[100%]">
+        <nav className="bg-white border-b-2 border-gray-200 px-2 sm:px-4 py-2.5 rounded fixed w-[100%]">
           <div className='container flex flex-wrap items-center justify-between mx-auto '>
             <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
               <a href='http://localhost:3000/'>Sarah & Dave</a>
@@ -32,7 +32,8 @@ export default function Home() {
             <div className='hidden w-full md:block md:w-auto'>
               <ul className='flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 
                               md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900
-                              dark:border-gray-700'>
+                              dark:border-gray-700'
+              >
                 <li>
                   <a
                     href="#HOME"
@@ -72,23 +73,24 @@ export default function Home() {
           </div>
         </nav>
 
-        <section id="HOME" className="md:max-w-full md:h-screen mx-auto items-center bg-image-central bg-no-repeat bg-cover p-20">
+        <section id="HOME" className="md:max-w-full md:h-screen mx-auto md:items-center bg-image-central bg-no-repeat bg-cover p-20">
 
-          <div className='flex flex-col text-center mt-36 p-36 text-white drop-shadow-lg'>
-            <strong className='text-7xl font-serif border-b-2 pb-2 '>Sarah & Dave</strong>
+          <div className='flex flex-col text-center mt-36 md:p-36 text-white drop-shadow-lg'>
+            <strong className='md:text-7xl text-5xl font-serif border-b-2 pb-2 '>Sarah & Dave</strong>
             <span className='text-2xl font-semibold pt-2'>14 ♥ 02 ♥ 2023</span>
           </div>
         </section>
 
         <section id='NOS' className=" md:max-w-full md:h-screen mx-auto bg-[#868D6B] p-20">
-          <h1>Nossa História</h1>
-          <div className='md:flex mt-12 items-start'>
-            <img
+          <h1 className='font-serif text-center text-white font-bold text-3xl pt-8'>Nossa História</h1>
+          <div className='md:flex mt-10 items-start'>
+            <p className="md:ml-5 md:p-2 text-justify md:text-xl font-semibold">
+              <img
               src='https://img.freepik.com/fotos-gratis/vista-frontal-do-homem-segurando-a-namorada-nas-costas-com-espaco-de-copia_23-2148714944.jpg?w=740&t=st=1676404686~exp=1676405286~hmac=6ec96a7a76f3e5f66f4b57096ab254eef36a877ddcdac15051e4769832622df9'
               alt="Casal"
-              className='float-left rounded w-[300px] mr-4'
+              className='float-left rounded md:w-[300px] mr-4'
             />
-            <p className="md:ml-5 md:p-2 text-justify md:text-xl font-semibold">
+            
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever
               since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
               five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
@@ -97,36 +99,33 @@ export default function Home() {
             </p>
 
           </div>
-          <div className='md:flex mt- items-start'>
+          <div className='md:flex mt-2 pb-2 mb-2 items-start'>
             <p className="md:mr-5 p-2 text-justify md:text-xl font-semibold">
               <img
               src='https://img.freepik.com/fotos-gratis/homem-sorridente-de-tiro-completo-segurando-mulher_23-2149690982.jpg?w=740&t=st=1676406550~exp=1676407150~hmac=a6876c546becd13781483155fa16b395214f45d4f36d3e25993542083407bc15'
               alt="Casal"
-              className='float-right rounded w-[300px] ml-4 '
+              className='float-right rounded md:w-[300px] ml-4 '
             />
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever
               since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
               five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
               the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-              including versions of Lorem Ipsum.
-            
-            
-            </p>
-            
+              including versions of Lorem Ipsum.          
+            </p>          
 
           </div>
         </section>
 
 
         <section id='INFORMACOES' className="md:max-w-full md:h-screen md:mx-auto items-center ">
-          <div className='md:flex items-center '>
+          <div className='md:flex items-center mb-5'>
             <img
               src='https://img.freepik.com/fotos-gratis/homem-sorridente-de-tiro-completo-segurando-mulher_23-2149690982.jpg?w=740&t=st=1676406550~exp=1676407150~hmac=a6876c546becd13781483155fa16b395214f45d4f36d3e25993542083407bc15'
               alt="Casal"
-              className='object-container md:h-screen md:w-[442px]'
+              className='object-container md:h-screen md:w-[600px]'
             />
 
-            <div className='flex flex-col items-center md:ml-60 '>
+            <div className='flex flex-col justify-items-center items-center md:ml-36'>
               <div className='flex flex-col items-center text-center '>
                 <Image
                   src={church}
@@ -201,7 +200,7 @@ export default function Home() {
 
         <section id='CONTATO' className="md:max-w-full md:h-screen mx-auto items-center bg-image-central bg-no-repeat bg-cover p-20">
           <div className='bg-local md:bg-fixed items-center ' >
-           <p className='text-white text-center font-serif mt-32 text-2xl'>
+           <p className='text-white text-center font-serif md:mt-32 text-2xl'>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever
               since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
               five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
