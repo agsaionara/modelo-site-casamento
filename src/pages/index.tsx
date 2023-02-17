@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import ReactAudioPlayer from 'react-audio-player';
-import { InstagramLogo, WhatsappLogo, Envelope } from "phosphor-react";
+import { InstagramLogo, WhatsappLogo, Envelope, Heart } from "phosphor-react";
 import church from '../../public/assets/church.png'
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         {/**Nav Bar */}
         <nav className="bg-white border-b-2 border-gray-200 px-2 sm:px-4 py-2.5 rounded fixed w-[100%]">
           <div className='container flex flex-wrap items-center justify-between mx-auto '>
-            <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
+            <span className='self-center text-xl font-semibold  whitespace-nowrap dark:text-white'>
               <a href='http://localhost:3000/'>Sarah & Dave</a>
             </span>
             <div className='hidden w-full md:block md:w-auto'>
@@ -75,15 +75,23 @@ export default function Home() {
 
         <section id="HOME" className="md:max-w-full md:h-screen mx-auto md:items-center bg-image-central bg-no-repeat bg-cover p-20">
 
-          <div className='flex flex-col text-center mt-36 md:p-36 text-white drop-shadow-lg'>
+          <div className='flex flex-col text-center items-center mt-36 md:p-36 text-white drop-shadow-lg'>
             <strong className='md:text-7xl text-5xl font-serif border-b-2 pb-2 '>Sarah & Dave</strong>
-            <span className='text-2xl font-semibold pt-2'>14 ♥ 02 ♥ 2023</span>
+           
+            <div className='flex gap-4 items-center text-center pt-2'>
+              <span className='text-2xl font-semibold '>14</span> 
+              <Heart size={12}  /> 
+              <span className='text-2xl font-semibold '>02 </span>
+              <Heart size={12} /> 
+              <span className='text-2xl font-semibold '>2023</span>
+            </div>
+            
           </div>
         </section>
 
-        <section id='NOS' className=" md:max-w-full md:h-screen mx-auto bg-[#868D6B] p-20">
+        <section id='NOS' className=" md:max-w-full md:h-screen mx-auto bg-[#868D6B] md:p-20 p-8">
           <h1 className='font-serif text-center text-white font-bold text-3xl pt-8'>Nossa História</h1>
-          <div className='md:flex mt-10 items-start'>
+          <div className='md:flex mt-6 items-start md:items-center'>
             <p className="md:ml-5 md:p-2 text-justify md:text-xl font-semibold">
               <img
               src='https://img.freepik.com/fotos-gratis/vista-frontal-do-homem-segurando-a-namorada-nas-costas-com-espaco-de-copia_23-2148714944.jpg?w=740&t=st=1676404686~exp=1676405286~hmac=6ec96a7a76f3e5f66f4b57096ab254eef36a877ddcdac15051e4769832622df9'
@@ -92,14 +100,11 @@ export default function Home() {
             />
             
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
-              five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-              the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-              including versions of Lorem Ipsum.
+              since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
             </p>
 
           </div>
-          <div className='md:flex mt-2 pb-2 mb-2 items-start'>
+          <div className='md:flex mt-2  pb-4 items-start'>
             <p className="md:mr-5 p-2 text-justify md:text-xl font-semibold">
               <img
               src='https://img.freepik.com/fotos-gratis/homem-sorridente-de-tiro-completo-segurando-mulher_23-2149690982.jpg?w=740&t=st=1676406550~exp=1676407150~hmac=a6876c546becd13781483155fa16b395214f45d4f36d3e25993542083407bc15'
@@ -107,10 +112,7 @@ export default function Home() {
               className='float-right rounded md:w-[300px] ml-4 '
             />
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
-              five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-              the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-              including versions of Lorem Ipsum.          
+              since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.         
             </p>          
 
           </div>
