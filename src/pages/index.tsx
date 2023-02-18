@@ -145,7 +145,7 @@ export default function Home() {
                 <span className="text-xl p-2">Ás 19:00</span>
               </div>
               <a
-                href='https://www.instagram.com/fi.lacerda/?igshid=YmMyMTA2M2Y%3D'
+                href='#'
                 target={'_blank'}
                 rel="external noreferrer"
               >
