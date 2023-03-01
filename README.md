@@ -8,5 +8,5 @@ Quem disse que os sites de casamento estão fora de moda? Eles são uma ferramen
 
 #### Divisão do Projeto
 - Front-End
-  - Contruido com o framework Next.js e com o construtor de estilos Tailwind CSS para ser a pagina de apresentação do aplicativo e a criação de um codigo para o bolão
+  - Contruido com o framework Next.js e com o construtor de estilos Tailwind CSS
   
